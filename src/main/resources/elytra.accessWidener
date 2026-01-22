@@ -1,0 +1,3 @@
+accessWidener v1 named
+accessible field net/minecraft/src/EntityLivingBase isJumping Z
+accessible field net/minecraft/src/Minecraft theMinecraft Lnet/minecraft/src/Minecraft;

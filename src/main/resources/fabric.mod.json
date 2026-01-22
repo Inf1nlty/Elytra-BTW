@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra",
+  "version": "${version}",
+  "name": "Elytra",
+  "description": "Add Elytra — functionality based on vanilla",
+  "authors": [
+    "Inf1nlty"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Inf1nlty/Elytra-BTW",
+    "sources": "https://github.com/Inf1nlty/Elytra-BTW"
+  },
+  "license": "MIT",
+  "icon": "assets/elytra/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ],
+    "btw:addon": [
+      "btw.community.elytra.ElytraAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "ELY"
+  },
+  "mixins": [
+    "elytra.mixins.json"
+  ],
+  "accessWidener" : "elytra.accessWidener",
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}

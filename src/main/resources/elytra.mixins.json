@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.inf1nlty.elytra.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "item.ItemMixin",
+    "accessor.EntityAccessor",
+    "entity.EntityPlayerMixin",
+    "entity.EntityFireworkRocketMixin"
+  ],
+  "client": [
+    "client.MinecraftMixin",
+    "client.RenderPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
