@@ -6,7 +6,7 @@ public class ElytraItems {
     public static Item elytra;
 
     public static void registerItems() {
-        elytra = new ItemElytra(21512);
+        elytra = new ItemElytra(23603);
         Item.itemsList[elytra.itemID] = elytra;
     }
 }
