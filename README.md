@@ -11,7 +11,7 @@ This mod adds an Elytra item that implements flight behavior, equipping, and dur
 
 ## How to Install
 
-1. [Download the latest release (.jar)](https://https://github.com/Inf1nlty/Elytra-BTW/releases/latest)
+1. [Download the latest release (.jar)](https://github.com/Inf1nlty/Elytra-BTW/releases/latest)
 2. Place it into your `mods` folder
 3. Start Minecraft with BTW Community Edition
 
