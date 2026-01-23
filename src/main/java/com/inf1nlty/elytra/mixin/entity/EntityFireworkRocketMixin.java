@@ -28,17 +28,17 @@ public class EntityFireworkRocketMixin implements IEntityFireworkRocket {
 
     @Unique private static final double ROCKET_BLEND = 0.5;
 
-    /** Low-speed target velocity (default 0.6) - Initial thrust velocity */
+    /** Low-speed target velocity (default 0.3) - Initial thrust velocity */
 
-    @Unique private static final double LOW_SPEED_TARGET = 0.6;
+    @Unique private static final double LOW_SPEED_TARGET = 0.3;
 
-    /** Medium-speed target velocity (default 1.2) - Medium-speed thrust */
+    /** Medium-speed target velocity (default 0.6) - Medium-speed thrust */
 
-    @Unique private static final double MID_SPEED_TARGET = 0.9;
+    @Unique private static final double MID_SPEED_TARGET = 0.6;
 
-    /** High-speed target velocity (default 1.5) - /* Maximum propulsion speed */
+    /** High-speed target velocity (default 0.9) - /* Maximum propulsion speed */
 
-    @Unique private static final double HIGH_SPEED_TARGET = 1.2;
+    @Unique private static final double HIGH_SPEED_TARGET = 0.9;
 
     // ===========================================
 
