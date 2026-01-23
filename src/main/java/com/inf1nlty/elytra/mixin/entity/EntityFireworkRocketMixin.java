@@ -54,7 +54,7 @@ public class EntityFireworkRocketMixin implements IEntityFireworkRocket {
         return this.elytra$attachedPlayerId;
     }
 
-    @Inject(method = "onUpdate", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "onUpdate", at = @At("HEAD"))
     private void elytra$attachAndBoost(CallbackInfo ci) {
         EntityFireworkRocket self = (EntityFireworkRocket)(Object)this;
 
@@ -64,12 +64,10 @@ public class EntityFireworkRocketMixin implements IEntityFireworkRocket {
             if (target != null && ElytraPhysics.getElytraFlying(target) && elytra$boostLifetime < MAX_BOOST_LIFETIME) {
                 elytra$applyBoost(self, target);
                 elytra$boostLifetime++;
-                fireworkAge = 0;
+
             } else {
                 elytra$detachAndDestroy(self);
             }
-
-            ci.cancel();
         }
     }
 

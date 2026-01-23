@@ -26,6 +26,19 @@ public class ItemElytra extends ArmorItem {
     }
 
     @Override
+    public int getColor(ItemStack stack) {
+        return getColorStatic(stack);
+    }
+
+    public static int getColorStatic(ItemStack stack) {
+        if (stack == null || !stack.hasTagCompound()) return -1;
+        NBTTagCompound nbt = stack.getTagCompound();
+        if (!nbt.hasKey("display")) return -1;
+        NBTTagCompound display = nbt.getCompoundTag("display");
+        return display.hasKey("color") ? display.getInteger("color") : -1;
+    }
+
+    @Override
     public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
         int slot = 2;
         ItemStack equipped = player.inventory.armorItemInSlot(slot);
@@ -34,11 +47,6 @@ public class ItemElytra extends ArmorItem {
             stack.stackSize = 0;
         }
         return stack;
-    }
-
-    @Override
-    public int getColorFromItemStack(ItemStack stack, int renderPass) {
-        return -1;
     }
 
     @Override
