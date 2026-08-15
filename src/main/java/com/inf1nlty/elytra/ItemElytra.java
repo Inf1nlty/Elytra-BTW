@@ -1,12 +1,11 @@
 package com.inf1nlty.elytra;
 
-import api.item.items.ArmorItem;
 import net.minecraft.src.*;
 
-public class ItemElytra extends ArmorItem {
+public class ItemElytra extends ItemArmor {
+
     public ItemElytra(int id) {
-        super(id, EnumArmorMaterial.CLOTH, 0, 1, 0);
-        this.maxStackSize = 1;
+        super(id, EnumArmorMaterial.CLOTH, 0, 1);
         this.setMaxDamage(432);
         this.setCreativeTab(CreativeTabs.tabCombat);
         this.setTextureName("elytra:elytra");
