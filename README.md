@@ -1,11 +1,12 @@
-# Elytra for Better Than Wolves Community Edition (3.0.x)
+# Elytra for Better Than Wolves Community Edition 3.1.0
 
 This mod adds an Elytra item that implements flight behavior, equipping, and durability consistent with the vanilla Elytra.
 ---
 
 ## Requirements
 
-- Minecraft with [Better Than Wolves Community Edition 3.x](https://github.com/BetterWithMods/BetterThanWolves-CommunityEdition)
+- Minecraft 1.6.4 with [Better Than Wolves Community Edition 3.1.0](https://github.com/BetterWithMods/BetterThanWolves-CommunityEdition)
+- Legacy Fabric Loader 0.18.4 or newer
 
 ---
 
