@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "elytra",
+  "id": "${mod_id}",
   "version": "${version}",
-  "name": "Elytra",
+  "name": "${name}",
   "description": "Add Elytra — functionality based on vanilla",
   "authors": [
     "Inf1nlty"
@@ -29,7 +29,8 @@
   ],
   "accessWidener" : "elytra.accessWidener",
   "depends": {
-    "fabricloader": ">=0.14.19",
-    "minecraft": "1.6.4"
+    "fabricloader": ">=0.18.4",
+    "minecraft": "${minecraft_version}",
+    "btw": ">=${btw_version}"
   }
 }
